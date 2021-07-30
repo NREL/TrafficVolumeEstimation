@@ -1,18 +1,14 @@
 # Ubiquitous Traffic Volume Estimation
 
-Traffic volume estimation work flow: Data pipeline -> Train and validate models -> Summerize results -> Visualization
+Hourly traffic volume estimation work flow: Data pipeline -> Train and validate hourly volume models -> Summerize results -> Visualization
+AADT estimation work flow: Data pipeline -> Train and validate ADT volume models -> Summerize results -> Visualization
 
-## City-level Hourly Volume Estimation
+## Hourly Volume Estimation
 <p align="center">
-  <img src="/hourly_estimate_city/volume.png" )
-</p>
-
-## State-wide Hourly Volume Estimation
-<p align="center">
-  <img src="/hourly_estimate_state/volume.jpg" )
+  <img src="/hourly_estimate/volume.png" )
 </p>
 
 ## AADT Estimation
 <p align="center">
-  <img src="/aadt_estimation_city/AADT.png" )
+  <img src="/aadt_estimate/AADT.png" )
 </p>
