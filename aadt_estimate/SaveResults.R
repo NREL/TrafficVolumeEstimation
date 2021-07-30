@@ -50,7 +50,7 @@ monthly_adt<-month_day_adt %>% group_by(Id, Month) %>% summarize(est_monthly_tot
 monthly_adt<-inner_join(monthly_adt, month_days, by="Month")
 monthly_adt<-mutate(monthly_adt, est_madt= est_monthly_total/days_in_month)
 
-AADT_FHWA<- monthly_adt %>% group_by(Id) %>% summarize(est_AADT = sum(est_monthly_total)/365)
+AADT_FHWA<- monthly_adt %>% group_by(Id) %>% summarize(est_AADT = sum(est_monthly_total)/sum(days_in_month))
 
 # Join AADT with network
 network = readRDS('1_MON/network.rds')
