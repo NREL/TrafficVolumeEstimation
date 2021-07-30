@@ -11,3 +11,5 @@ This notebook build XGBoost model for hourly volume estimation and use bayesian 
 1. `cols_drop`: columns that need to be removed. 
 
 1. `X_name_dict`: specify input data column names that will displayed in the variable importance plot. 
+
+After training and validate the model, run `results.R` to calculate error metrics for hourly volume estimation.
