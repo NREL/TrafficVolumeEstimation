@@ -30,5 +30,5 @@ Rscript Visulaization.R yyyy-mm-dd h h h ...
  ```
 
 <p align="center">
-  <img src="/hourly_estimate_city/volume.png" )
+  <img src="/hourly_estimate/volume.png" )
 </p>
