@@ -1,0 +1,2 @@
+Temp,WindSp,Precip,Snow,StationId,Date,Dir,Long,Lat,NumberOfLanes,FC,SpeedLimit,FRC,DayOfWeek,Month,Hour,AvgSp,ProbeCount,Volume,PenRate,fold,PredVolume
+40.8,24.5,0.15,0,test,1/1/2019,NB,,,0,2,60,1,Tuesday,1,0,61.95,20,129,0.15503876,9,23.88724899
