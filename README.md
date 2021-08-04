@@ -1,8 +1,8 @@
 # Ubiquitous Traffic Volume Estimation
 
-Hourly traffic volume estimation work flow: Data pipeline -> Train and validate hourly volume models -> Summerize and visualize results -> Estimate hourly volume for the entire network
+Hourly traffic volume estimation work flow: Data pipeline -> Train and validate hourly volume models -> Summarize and visualize results -> Estimate hourly volume for the entire network
 
-AADT estimation work flow: Data pipeline -> Train and validate ADT volume models -> Summerize and visualize results -> Visualization -> Estimate AADT for the entire network
+AADT estimation work flow: Data pipeline -> Train and validate ADT volume models -> Summarize and visualize results -> Visualization -> Estimate AADT for the entire network
 
 
 ## Hourly Volume Estimation
