@@ -29,3 +29,7 @@ The figure below demonstrates AADT volume estimation in Worcester, MA.
 <p align="center">
   <img src="/aadt_estimate/AADT.png" )
 </p>
+  
+## Authors & Contact
+  
+The primary author of this codebase is Yi Hou. The principal investigator for this project is Venu Garikapati. For more information or if you have any questions, please contact Chris Hoehne (christopher.hoehne@nrel.gov).
