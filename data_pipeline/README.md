@@ -4,9 +4,9 @@ The scripts fuse multiple data sources and prepare the data for model training. 
 
 ## Prepare input data
 
-Two data files specified below are needed for volume estimation.
+Two data files specified below are needed for volume estimation. This ground truth data is used for training and should be recorded by continuous and/or short-term traffic counting stations *in-situ*. Note that these data are not always available for all regions, and the data may be collected and provided in disparate formats that need preparation to be ingested in this data pipeline. The specific names of columns can be adjusted in [`DefaultValues.R`](https://github.com/NREL/TrafficVolumeEstimation/blob/master/data_pipeline/DefaultValues.R) The following specifies how these files should be formatted:
 
-1. `stations.csv`. The station data file should contain the following columns. If functional class and number of lanes information can not be found, fill the columns with 0s.
+1. [`stations.csv`](https://github.com/NREL/TrafficVolumeEstimation/blob/master/data_pipeline/stations.csv). The station data file should contain the following columns. If functional class and number of lanes information can not be found, fill the columns with 0s.
 
     * Station ID: the unique ID of the volume count location
   
@@ -18,7 +18,7 @@ Two data files specified below are needed for volume estimation.
   
     * Number of lanes: number of lanes at the count station location
 
-1. `volume_24hr.csv`. The volume counts data file should contain the following columns. 
+1. [`volume_24hr.csv`](https://github.com/NREL/TrafficVolumeEstimation/blob/master/data_pipeline/volume_24hr.csv). The volume counts data file should contain the following columns. 
 
     * Station ID: the unique ID of the volume count location
     
@@ -30,7 +30,9 @@ Two data files specified below are needed for volume estimation.
 
 ## Run the code
 
-1. Specify the values in `DefaultValues.R` script
+After retrieving and preparing the data:
+
+1. Specify the values in [`DefaultValues.R`](https://github.com/NREL/TrafficVolumeEstimation/blob/master/data_pipeline/DefaultValues.R) script
 
 1. Run `Rscript JoinStationsWithVolume.R` to join the station table with the traffic volume table and output the joined data at `volume_24hr.rds`. A data log is created and saved at `data_log.rds`. 
 
